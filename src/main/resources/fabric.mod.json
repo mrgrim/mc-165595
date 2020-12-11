@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mc-165595",
-  "version": "1.0",
+  "version": "1.1",
 
   "name": "Fix for MC-165595",
   "description": "This mod provides a fix for the Guardian beam rendering bug described in MC-165595.",
