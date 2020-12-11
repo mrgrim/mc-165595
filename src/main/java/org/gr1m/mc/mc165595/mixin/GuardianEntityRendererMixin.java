@@ -26,6 +26,6 @@ public abstract class GuardianEntityRendererMixin
 								   to = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/MathHelper;cos(F)F", ordinal = 0)))
 	float ModifyQ(float q, GuardianEntity guardianEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i)
 	{
-		return (guardianEntity.world.getTime() * -0.075F) + (g * -0.075F);
+		return ((float)(guardianEntity.world.getTime() % 314159) + g) * -0.075F;
 	}
 }
