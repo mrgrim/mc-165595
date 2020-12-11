@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mc-165595",
+  "version": "1.0",
+
+  "name": "Fix for MC-165595",
+  "description": "This mod provides a fix for the Guardian beam rendering bug described in MC-165595.",
+  "authors": [
+    "MrGrim"
+  ],
+  "contact": {
+    "sources": "https://github.com/mrgrim/mc-165595"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.gr1m.mc.mc165595.Main"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
+  }
+}
