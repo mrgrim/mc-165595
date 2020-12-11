@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Slice;
 @Mixin(GuardianEntityRenderer.class)
 public abstract class GuardianEntityRendererMixin
 {
-	@ModifyVariable(method = "render", index = 10, at = @At(value = "STORE", ordinal = 0, opcode = Opcodes.FSTORE),
+	@ModifyVariable(method = "render", name = "k", index = 10, at = @At(value = "STORE", ordinal = 0, opcode = Opcodes.FSTORE),
 					slice = @Slice(from = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;getTime()J", ordinal = 0),
 								   to = @At(value = "INVOKE", target = "Lnet/minecraft/entity/mob/GuardianEntity;getStandingEyeHeight()F", ordinal = 0)))
 	float ModifyK(float k, GuardianEntity guardianEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i)
